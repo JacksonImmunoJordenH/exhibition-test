@@ -9,6 +9,42 @@ body {
   margin-bottom: 1rem;
 }
 
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ex-intro {
+  width: 67%;
+}
+
+.light-header {
+  font-weight: 300;
+}
+
+.ex-intro p {
+  font-size: .95rem;
+}
+
+.presentation-photo {
+  width: 30%;
+}
+
+.presentation-photo img {
+  width: 100%;
+}
+
+.presentation-photo p {
+  border: 2px solid #d4edfc;
+  border-top: none;
+  padding: 10px 10px;
+  font-size: .9rem;
+}
+
 .dropdown {
   font-size: .95rem;
   padding: .8rem 0;
@@ -34,16 +70,26 @@ body {
   margin: 0 auto;
 }
 
-.exhibit {
-  border-bottom: 3px solid #d4edfc;
+.container h2 {
+  color: #406B85;
 }
 
-.exhibit tr {
+.table {
+  border-bottom: 3px solid #d4edfc;
+  margin-bottom: 5rem;
+}
+
+.table tr {
   background: #d4edfc;
 }
 
-.exhibit td {
+.table td {
   border-top: 3px solid #fff;
+}
+
+.exhibit th:nth-child(3n+2),
+.sponsored th:first-child {
+  padding-left: 1.25rem;
 }
 
 .exhibit td:first-child {
@@ -52,12 +98,19 @@ body {
   border-left: 3px solid #d4edfc;
 }
 
-.exhibit td:nth-child(1n+2) {
+.exhibit td:nth-child(1n+2),
+.sponsored td {
   padding-left: 6px;
 }
 
-.exhibit td:nth-child(1n+3) {
+.exhibit td:nth-child(1n+3),
+.sponsored td:nth-child(n+2) {
   font-weight: 600;
+}
+
+.exhibit td:nth-child(3n),
+.sponsored td:nth-child(2n) {
+  padding-right: 9px;
 }
 
 .ex-img {
@@ -72,41 +125,46 @@ body {
   margin: 0 auto;
 }
 
-.exhibit {
+.table {
   font-size: .90rem;
   width: 100%;
 }
 
-.exhibit a {
-  color: #333333;
+.table a {
+  color: #406B85;
   text-decoration: none;
 }
 
-.exhibit a:hover {
-  color: #666666;
+.table a:hover h3 {
+  color: #719fba;
   text-decoration: underline;
 }
 
-.exhibit p {
+.table p {
   margin-top: 1.3rem;
   margin-bottom: 1.3rem;
+  width: 90%;
+  padding-left: 1rem;
 }
 
-.exhibit h3 {
+.table h3 {
   display: inline-block;
+  width: 90%;
+  padding-left: 1rem;
+  font-size: 1rem;
 }
 
-.exhibit th {
+.table th {
   text-align: left;
   padding: 12px 18px 12px 6px;
   font-size: 1.1rem;
 }
 
-.exhibit td {
+.table td {
   color: #333333;
 }
 
-.exhibit button {
+.table button {
   border: none;
   padding: 9px 15px;
   font-size: .9rem;
@@ -166,7 +224,11 @@ body {
 }
 
 .exhibit td {
-  height: 145px;
+  height: 170px;
+}
+
+.sponsored td {
+  height: 100px;
 }
 
 @supports (-ms-ime-align: auto) {
@@ -178,5 +240,109 @@ body {
     padding: .8rem 0;
     padding-right: 3px;
   }
+  .ex-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #select-drop {
+    padding: 1rem 0;
+    padding-right: 5px;
+  }
+  .dropdown {
+    padding: .8rem 0;
+    padding-right: 3px;
+  }
+  .ex-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen\0 {
+  #select-drop {
+    padding: 1rem 0;
+    padding-right: 5px;
+  }
+  .dropdown {
+    padding: .8rem 0;
+    padding-right: 3px;
+  }
+  .ex-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.slideshow {
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.slideshow-header {
+  margin: 0 auto;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.slide-container {
+  width: 400px;
+  font-size: .8rem;
+}
+
+.slide-img-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slide-container p {
+  margin: 0 auto;
+}
+
+.slick-dots {
+  width: 54px;
+  padding: 0 70px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.slick-dots button {
+  padding: 0px;
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin: 0 10px;
+  margin-top: 20px;
+  background: #bce3fa;
+  color: #4d4d4d;
+  font-size: 0;
+}
+
+.slick-dots li.slick-active button {
+  margin-top: 18px;
+  width: 13px;
+  height: 13px;
+  background: #91d1f7;
 }
 /*# sourceMappingURL=style.css.map */

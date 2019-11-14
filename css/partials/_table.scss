@@ -9,6 +9,38 @@ body {
     margin-bottom: 1rem;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ex-intro {
+    width: 67%;
+}
+
+.light-header {
+    font-weight: 300;
+}
+
+.ex-intro p {
+    font-size: .95rem;
+}
+
+.presentation-photo {
+    width: 30%;
+}
+
+.presentation-photo img {
+    width: 100%;
+}
+
+.presentation-photo p {
+    border: 2px solid $lightBlue;
+    border-top: none;
+    padding: 10px 10px;
+    font-size: .9rem;
+}
+
 .dropdown {
     font-size: .95rem;
     padding: .8rem 0;
@@ -30,16 +62,26 @@ body {
     margin: 0 auto;
 }
 
-.exhibit {
-    border-bottom: 3px solid $lightBlue;
+.container h2 {
+    color: $linkBlue;
 }
 
-.exhibit tr {
+.table {
+    border-bottom: 3px solid $lightBlue;
+    margin-bottom: 5rem;
+}
+
+.table tr {
     background: $lightBlue;
 }
 
-.exhibit td {
+.table td {
     border-top: 3px solid #fff;
+}
+
+.exhibit th:nth-child(3n+2),
+.sponsored th:first-child {
+    padding-left: 1.25rem;
 }
 
 // Selects the first column which contains images
@@ -50,13 +92,21 @@ body {
 }
 
 // Selects all table cells BUT NOT the first col which contains images.
-.exhibit td:nth-child(1n+2) {
+.exhibit td:nth-child(1n+2),
+.sponsored td {
     padding-left: 6px;
 }
 
 // Selects the last 2 columns, containing the location and dates.
-.exhibit td:nth-child(1n+3) {
+.exhibit td:nth-child(1n+3),
+.sponsored td:nth-child(n+2) {
     font-weight: 600;
+}
+
+// Selects the third column, which contains location
+.exhibit td:nth-child(3n),
+.sponsored td:nth-child(2n) {
+    padding-right: 9px;
 }
 
 .ex-img {
@@ -67,41 +117,46 @@ body {
     margin: 0 auto;
 }
 
-.exhibit {
+.table {
     font-size: .90rem;
     width: 100%;
 }
 
-.exhibit a {
-    color: $darkGrey;
+.table a {
+    color: $linkBlue;
     text-decoration: none;
 }
 
-.exhibit a:hover {
-    color: lighten($darkGrey, 20%);
+.table a:hover h3 {
+    color: lighten($linkBlue, 20%);
     text-decoration: underline;
 }
 
-.exhibit p {
+.table p {
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
+    width: 90%;
+    padding-left: 1rem;
 }
 
-.exhibit h3 {
+.table h3 {
     display: inline-block;
+    width: 90%;
+    padding-left: 1rem;
+    font-size: 1rem;
 }
 
-.exhibit th {
+.table th {
     text-align: left;
     padding: 12px 18px 12px 6px;
     font-size: 1.1rem;
 }
 
-.exhibit td {
+.table td {
     color: $darkGrey;
 }
 
-.exhibit button {
+.table button {
     border: none;
     padding: 9px 15px;
     font-size: .9rem;
@@ -159,7 +214,11 @@ body {
 }
 
 .exhibit td {
-    height: 145px;
+    height: 170px;
+}
+
+.sponsored td {
+    height: 100px;
 }
 
 
@@ -172,5 +231,41 @@ body {
     .dropdown {
         padding: .8rem 0;
         padding-right: 3px;
+    }
+
+    .ex-img {
+        justify-content: center;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #select-drop {
+        padding: 1rem 0;
+        padding-right: 5px;
+    }
+
+    .dropdown {
+        padding: .8rem 0;
+        padding-right: 3px;
+    }
+
+    .ex-img {
+        justify-content: center;
+    }
+}
+
+@media screen\0 {
+    #select-drop {
+        padding: 1rem 0;
+        padding-right: 5px;
+    }
+
+    .dropdown {
+        padding: .8rem 0;
+        padding-right: 3px;
+    }
+
+    .ex-img {
+        justify-content: center;
     }
 }
