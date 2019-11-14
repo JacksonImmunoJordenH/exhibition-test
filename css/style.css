@@ -34,6 +34,10 @@ body {
   margin: 0 auto;
 }
 
+.exhibit {
+  border-bottom: 3px solid #d4edfc;
+}
+
 .exhibit tr {
   background: #d4edfc;
 }
@@ -71,10 +75,6 @@ body {
 .exhibit {
   font-size: .90rem;
   width: 100%;
-}
-
-.exhibit {
-  border-bottom: #d4edfc;
 }
 
 .exhibit a {

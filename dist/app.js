@@ -24,6 +24,10 @@ selectDrop.addEventListener("change", function () {
             }
         } else {
             showDrop[_i].style.display = "block";
+
+            for (var _n = 0; _n < showAll.length; _n++) {
+                showAll[_n].style.display = "table-row";
+            }
         }
     }
 });
