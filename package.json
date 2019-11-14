@@ -1,0 +1,15 @@
+{
+  "name": "exhibition-test",
+  "version": "1.0.0",
+  "description": "Exhibition Page Demo",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "author": "jorden",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}

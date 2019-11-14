@@ -1,0 +1,176 @@
+body {
+    font-family: $openSans;
+}
+
+#select-drop {
+    padding: 1rem 0;
+    padding-right: 3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dropdown {
+    font-size: .95rem;
+    padding: .8rem 0;
+    padding-right: 2.4rem;
+    margin-top: 4px;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-drop {
+    display: none;
+}
+
+.container {
+    width: 695px;
+    margin: 0 auto;
+}
+
+.exhibit tr {
+    background: $lightBlue;
+}
+
+.exhibit td {
+    border-top: 3px solid #fff;
+}
+
+// Selects the first column which contains images
+.exhibit td:first-child {
+    background: #fff;
+    border-top: 3px solid $lightBlue;
+    border-left: 3px solid $lightBlue;
+}
+
+// Selects all table cells BUT NOT the first col which contains images.
+.exhibit td:nth-child(1n+2) {
+    padding-left: 6px;
+}
+
+// Selects the last 2 columns, containing the location and dates.
+.exhibit td:nth-child(1n+3) {
+    font-weight: 600;
+}
+
+.ex-img {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 0 auto;
+}
+
+.exhibit {
+    font-size: .90rem;
+    width: 100%;
+}
+
+.exhibit table {
+    border-bottom: $lightBlue;
+}
+
+.exhibit a {
+    color: $darkGrey;
+    text-decoration: none;
+}
+
+.exhibit a:hover {
+    color: lighten($darkGrey, 20%);
+    text-decoration: underline;
+}
+
+.exhibit p {
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.exhibit h3 {
+    display: inline-block;
+}
+
+.exhibit th {
+    text-align: left;
+    padding: 12px 18px 12px 6px;
+    font-size: 1.1rem;
+}
+
+.exhibit td {
+    color: $darkGrey;
+}
+
+.exhibit button {
+    border: none;
+    padding: 9px 15px;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.exhibit-buttons {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.ex-btn-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+
+.meeting-button {
+    background: $blue;
+    color: #fff;
+}
+
+.meeting-button:hover {
+    // background: lighten($blue, 5%);
+    background: #fff;
+    color: $blue;
+    border: 2px solid $blue;
+    padding: 7px 13px;
+
+}
+
+.booth-button {
+    background: darken($lightBlue, 28%);
+    color: #fff;
+}
+
+.booth-button:hover {
+    background: #fff;
+    color: darken($lightBlue, 28%);
+    border: 2px solid darken($lightBlue, 28%);
+    padding: 7px 13px;
+}
+
+.meeting-button:hover,
+.booth-button:hover {
+    cursor: pointer;
+}
+
+.table-header {
+    background: $blue !important;
+    color: #fff;
+}
+
+.exhibit td {
+    height: 145px;
+}
+
+
+@supports (-ms-ime-align:auto) {
+    #select-drop {
+        padding: 1rem 0;
+        padding-right: 5px;
+    }
+
+    .dropdown {
+        padding: .8rem 0;
+        padding-right: 3px;
+    }
+}

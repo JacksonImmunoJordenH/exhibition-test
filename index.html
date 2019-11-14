@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exhibition</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <script src="https://kit.fontawesome.com/f8fa80ab4c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown-container">
+            <div>
+                <select name="dropdown" id="select-drop">
+                    <option value="all-drop">&nbsp;Show All</option>
+                    <option value="orgs">&nbsp;Sort by Organisation</option>
+                    <option value="regions">&nbsp;Sort by Region</option>
+                    <option value="seasons">&nbsp;Sort by Season</option>
+                </select>
+            </div>
+            <div class="all-drop hide-drop orgs">
+                <select name="dropdown" class="dropdown">
+                    <option value="all" selected="">&nbsp;All Organisations</option>
+                    <option value="nsh">&nbsp;Nat'l Soc for Histotechnology</option>
+                    <option value="ashi">&nbsp;ASHI</option>
+                    <option value="lse">&nbsp;Life Science Exhibits</option>
+                    <option value="gliifca">&nbsp;GLIIFCA</option>
+                    <option value="sfn">&nbsp;Society for Neuroscience</option>
+                    <option value="indie">&nbsp;Independant</option>
+                    <option value="medica">&nbsp;Medica</option>
+                    <option value="ascb">&nbsp;Amer Society for Cell Biology</option>
+                </select>
+            </div>
+            <div class="all-drop hide-drop seasons">
+                <select name="dropdown" class="dropdown">
+                    <option value="all" selected="">&nbsp;All Seasons</option>
+                    <option value="spring">&nbsp;Spring</option>
+                    <option value="summer">&nbsp;Summer</option>
+                    <option value="autumn">&nbsp;Autumn</option>
+                    <option value="winter">&nbsp;Winter</option>
+                </select>
+            </div>
+            <div class="all-drop hide-drop regions">
+                <select name="dropdown" class="dropdown">
+                    <option value="all" selected="">&nbsp;All Regions</option>
+                    <option value="europe">&nbsp;Europe</option>
+                    <option value="north-america">&nbsp;North America</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="exhibit" cellspacing="0">
+            <tr class="table-header">
+                <th width="16%">Meeting</th>
+                <th width="50%">Details</th>
+                <th width="20%">Location</th>
+                <th width="14%">Dates</th>
+            </tr>
+            <tr class="all hide-list north-america autumn nsh">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/NSH-logo.png"></div></td>
+                <td>
+                    <div><a href="http://nsh.org/"><h3>NSH-Nat'l Soc For Histotechnology</h3></a></div>
+                    <div class="exhibit-buttons">
+                        <div class="ex-btn-container">
+                            <a target="_blank" href="https://r1.dotmailer-surveys.com/d72a8r36-243j0386"><button class="meeting-button"><i class="fas fa-users"></i> Arrange a Meeting</button></a>
+                            <button class="booth-button"><i class="fas fa-thumbtack"></i> Booth #618</button>
+                        </div>
+                    </div>
+                </td>
+                <td>New Orleans, LA</td>
+                <td>Sep 20-25</td>
+            </tr>
+            <tr class="all hide-list north-america autumn ashi">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/ashi.jpg"></div></td>
+                <td>
+                    <div><a href="https://2019.ashi-hla.org/"><h3>ASHI/BANFF Joint Scientific Conference</h3></a></div>
+                    <div class="exhibit-buttons">
+                        <div class="ex-btn-container">
+                            <a target="_blank" href="https://r1.dotmailer-surveys.com/d72a8r36-243j0386"><button class="meeting-button"><i class="fas fa-users"></i> Arrange a Meeting</button></a>
+                            <button class="booth-button"><i class="fas fa-thumbtack"></i> Booth #227</button>
+                        </div>
+                    </div>
+                </td>
+                <td>Pittsburgh, PA</td>
+                <td>Sep 23-27</td>
+            </tr>
+            <tr class="all hide-list north-america autumn lse">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/Life-Science-Exhibits-logo2.gif"></div></td>
+                <td>
+                    <div>
+                        <a href="http://www.lifescienceexhibits.com/"><h3>Life Science Exhibits</h3></a>
+                        <p>Fred Hutchinson Cancer Research Center</p>
+                    </div>
+                </td>
+                <td>Seattle, WA</td>
+                <td>Sep 25</td>
+            </tr>
+            <tr class="all hide-list north-america autumn gliifca">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/GLIIFCA.jpg"></div></td>
+                <td>
+                    <div>
+                        <a href="http://www.gliifca.org/"><h3>GLIIFCA - Great Lakes International Imaging & Flow Cytometry Association</h3></a>
+                    </div>
+                </td>
+                <td>Troy, WI</td>
+                <td>Sep 27-29</td>
+            </tr>
+            <tr class="all hide-list north-america autumn lse">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/Life-Science-Exhibits-logo2.gif"></div></td>
+                <td>
+                    <div>
+                        <a href="http://www.lifescienceexhibits.com/"><h3>Life Science Exhibits</h3></a>
+                        <p>Univ Pennsylvannia</p>
+                    </div>
+                </td>
+                <td>Philadelphia, PA</td>
+                <td>Oct 2</td>
+            </tr>
+            <tr class="all hide-list north-america autumn lse">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/Life-Science-Exhibits-logo2.gif"></div></td>
+                <td>
+                    <div>
+                        <a href="http://www.lifescienceexhibits.com/"><h3>Life Science Exhibits</h3></a>
+                        <p>Univ Michigan</p>
+                    </div>
+                </td>
+                <td>Ann Arbor, MI</td>
+                <td>Oct 17</td>
+            </tr>
+            <tr class="all hide-list north-america autumn sfn">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/SFN-logo.gif"></div></td>
+                <td>
+                    <div><a href="https://www.sfn.org/"><h3>SfN - Society for Neuroscience</h3></a></div>
+                    <div class="exhibit-buttons">
+                        <div class="ex-btn-container">
+                            <a target="_blank" href="https://r1.dotmailer-surveys.com/d72a8r36-243j0386"><button class="meeting-button"><i class="fas fa-users"></i> Arrange a Meeting</button></a>
+                            <button class="booth-button"><i class="fas fa-thumbtack"></i> Booth #1362</button>
+                        </div>
+                    </div>
+                </td>
+                <td>Chicago, IL</td>
+                <td>Oct 19-23</td>
+            </tr>
+            <tr class="all hide-list north-america autumn lse">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/Life-Science-Exhibits-logo2.gif"></div></td>
+                <td>
+                    <div>
+                        <a href="http://www.lifescienceexhibits.com/"><h3>Life Science Exhibits</h3></a>
+                        <p>John Hopkins Univ</p>
+                    </div>
+                </td>
+                <td>Baltimore, MD</td>
+                <td>Oct 31</td>
+            </tr>
+            <tr class="all hide-list north-america autumn indie">
+                <td></td>
+                <td>
+                    <div>
+                        <h3>Cincinnati Children's Hospital Research Fndn</h3>
+                        <p>2nd Vendor Show</p>
+                    </div>
+                </td>
+                <td>Cincinatti, OH</td>
+                <td>Nov 1</td>
+            </tr>
+            <tr class="all hide-list north-america autumn lse">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/Life-Science-Exhibits-logo2.gif"></div></td>
+                <td>
+                    <div>
+                        <a href="http://www.lifescienceexhibits.com/"><h3>Life Science Exhibits</h3></a>
+                        <p>Case Western Reserve Univ</p>
+                    </div>
+                </td>
+                <td>Cleveland, OH</td>
+                <td>Nov 13</td>
+            </tr>
+            <tr class="all hide-list north-america autumn lse">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/Life-Science-Exhibits-logo2.gif"></div></td>
+                <td>
+                    <div>
+                        <a href="http://www.lifescienceexhibits.com/"><h3>Life Science Exhibits</h3></a>
+                        <p>Cleveland Clinic Fndn</p>
+                    </div>
+                </td>
+                <td>Cleveland, OH</td>
+                <td>Nov 14</td>
+            </tr>
+            <tr class="all hide-list europe autumn medica">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/medica-logo.jpg"></div></td>
+                <td>
+                    <div><a href="https://www.sfn.org/"><h3>Medica 2019</h3></a></div>
+                    <div class="exhibit-buttons">
+                        <div class="ex-btn-container">
+                            <a target="_blank" href="https://r1.dotmailer-surveys.com/d72a8r36-243j0386"><button class="meeting-button"><i class="fas fa-users"></i> Arrange a Meeting</button></a>
+                        </div>
+                    </div>
+                </td>
+                <td>Düsseldorf, Germany</td>
+                <td>Nov 18-21</td>
+            </tr>
+            <tr class="all hide-list north-america autumn indie">
+                <td></td>
+                <td>
+                    <div><a href="https://autumnimmunologyconference.org/"><h3>Autumn Immunology Conference</h3></a></div>
+                </td>
+                <td>Chicago, IL</td>
+                <td>Nov 22-25</td>
+            </tr>
+            <tr class="all hide-list north-america winter ascb">
+                <td><div class="ex-img"><img src="https://www.jacksonimmuno.com/img/static-pages/ascb-logo.JPG"></div></td>
+                <td>
+                    <div><a href="http://www.ascb.org/"><h3>Amer Society for Cell Biology</h3></a></div>
+                    <div class="exhibit-buttons">
+                        <div class="ex-btn-container">
+                            <a target="_blank" href="https://r1.dotmailer-surveys.com/d72a8r36-243j0386"><button class="meeting-button"><i class="fas fa-users"></i> Arrange a Meeting</button></a>
+                            <button class="booth-button"><i class="fas fa-thumbtack"></i> Booth #733</button>
+                        </div>
+                    </div>
+                </td>
+                <td>Washington, DC</td>
+                <td>Dec 8-11</td>
+            </tr>
+        </table>
+    </div>
+    <script src="dist/app.js"></script>
+</body>
+</html>
