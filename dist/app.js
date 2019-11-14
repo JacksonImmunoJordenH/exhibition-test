@@ -1,6 +1,7 @@
 "use strict";
 
 var selectDrop = document.getElementById("select-drop");
+var dropDown = document.querySelectorAll('.dropdown');
 
 selectDrop.addEventListener("change", function () {
 
@@ -25,15 +26,18 @@ selectDrop.addEventListener("change", function () {
         } else {
             showDrop[_i].style.display = "block";
 
-            for (var _n = 0; _n < showAll.length; _n++) {
-                showAll[_n].style.display = "table-row";
+            for (var _n = 0; _n < dropDown.length; _n++) {
+                dropDown[_n].selectedIndex = 0;
+            }
+
+            for (var _n2 = 0; _n2 < showAll.length; _n2++) {
+                showAll[_n2].style.display = "table-row";
             }
         }
     }
 });
 
 // Assigns select elements with a class of dropdown to dropDown variable
-var dropDown = document.querySelectorAll('.dropdown');
 
 var _loop = function _loop(i) {
     // Adds a "change" event listener to select element, runs an anonymous function
